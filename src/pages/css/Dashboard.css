@@ -1,0 +1,66 @@
+.dashboard-container {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF8F8;
+    border: 2px solid #0000001A;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px #00000040;
+    
+}
+
+.dashboard-head h1{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+}
+.dashboard-head p{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+
+.username {
+    color: #CE0809;
+}
+
+
+.cards-container {
+    padding: 20px;
+    --bs-gutter-y :20px !important;
+}
+
+.card {
+    background-color: #FFE4E5;
+    border: 1px solid #FFE4E5;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+.icon-container {
+    margin-bottom: 10px;
+}
+
+.icon1 {
+    width: 70px;
+    height: 70px;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+.card .count {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+}
+

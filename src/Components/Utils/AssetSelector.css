@@ -1,0 +1,193 @@
+/* Asset selector styles */
+.asset-selector {
+  position: absolute;
+  top: 45px;
+  left: 60px;
+  width: 250px;
+  height: 100%;
+  max-height: calc(100% - 45px);
+  overflow-y: auto;
+  background-color: #FFEDED;
+  padding: 15px;
+  border-radius: 0px;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.asset-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.asset-header h5 {
+  margin: 0;
+  color: #333;
+}
+
+.asset-header button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.asset-header button:hover {
+  color: #333;
+}
+
+.all-categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.category-group {
+  margin-bottom: 0;
+}
+
+.category-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #b44;
+  /* margin-bottom: 8px; */
+  /* margin-top: 8px; */
+  padding-left: 2px;
+}
+
+.all-subcategories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-left: 8px;
+}
+
+.subcategory-group {
+  margin-bottom: 0;
+}
+
+.subcategory-title {
+  font-size: 1em;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  padding-left: 4px;
+}
+
+.asset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.asset-item {
+  border: 1px solid #3c3a3a;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.asset-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(12, 11, 11, 0.1);
+}
+
+.asset-image {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+/* Specific styles for texture images */
+.texture-image {
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Specific styles for model images */
+.model-image {
+  height: 100px;
+  object-fit: contain;
+}
+
+.asset-item p {
+  margin: 0;
+  text-align: center;
+  color: #333;
+  font-size: 12px;
+}
+
+/* Mesh selection styles */
+.mesh-selection-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.mesh-selection-section h6 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 5px 0;
+  z-index: 1;
+}
+
+.mesh-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-right: 5px;
+}
+
+.mesh-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.mesh-item label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #444;
+}
+
+.mesh-item input[type="checkbox"] {
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Customize scrollbar for better appearance */
+.mesh-selection-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mesh-selection-section::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.mesh-selection-section::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.mesh-selection-section::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 

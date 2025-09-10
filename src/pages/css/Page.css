@@ -1,0 +1,16 @@
+.dynamic-banner{
+ background-image: url(../../assets/model-design.jpg);
+ padding: 200px 0px;
+ background-size: cover;
+ background-position: center;
+ background-blend-mode: darken;
+ background-color: rgba(0, 0, 0, 0.637);
+
+}
+
+.dynamic-banner h2{
+    font-size: 42px !important ;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}

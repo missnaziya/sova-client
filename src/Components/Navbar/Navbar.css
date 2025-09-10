@@ -1,0 +1,271 @@
+/* Top Navbar Section */
+.navbar-row-icon {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav1-section {
+  background-color: #ce0809;
+}
+.nav-section {
+  position: relative !important;
+}
+
+.navbar {
+  position: static !important;
+}
+
+.user-icon {
+  margin-right: 10px;
+}
+.navbar-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-main svg {
+  cursor: pointer;
+  font-size: 28px;
+  color: #ce0809;
+}
+
+/* Social Icons */
+.navbar-social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 0;
+}
+.navbar-social-icons ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-social-icons ul li img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Language Dropdown */
+.language {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 10px !important;
+}
+.language-button {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #0000001a;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 4px 6px;
+}
+.language-icon {
+  height: 17px;
+  margin-right: 2px;
+}
+.language-dropdown {
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Custom Language Dropdown */
+.language-selector {
+  position: relative;
+  cursor: pointer;
+}
+.custom-language-dropdown {
+  position: absolute;
+  top: 100%;
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  width: 100px;
+  z-index: 100;
+}
+.custom-language-dropdown li {
+  padding: 6px 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.custom-language-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+.lang-name {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Main Navbar */
+.row.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-logo img {
+  cursor: pointer;
+}
+.navbar-links {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-links ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-links li {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 10px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+.navbar-links li:hover {
+  background-color: #ce0809;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* Buttons */
+.navbar-btn {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 14px;
+}
+
+.navbar-btn ul {
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+.btn-sign-in,
+.btn-sign-up {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  padding: 4px 17px;
+  border: 2px solid #ce0809;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #ce0809;
+  color: white;
+}
+.btn-sign-in:hover,
+.btn-sign-up:hover {
+  background-color: white;
+  color: #ce0809;
+  border-color: #ce0809;
+}
+
+/* Mobile Styles */
+.mobile-menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.navbar-links.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding-bottom: 20px;
+}
+.navbar-links.active ul {
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+.navbar-links.active li {
+  text-align: center;
+  padding: 4px 10px;
+}
+.navbar-links.active .btn-sign-in,
+.navbar-links.active .btn-sign-up {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 991px) {
+  .navbar-logo {
+    flex-grow: 1;
+  }
+  .navbar-btn {
+    gap: 20px;
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+  .navbar-links {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .navbar-links li {
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+  .btn-sign-in,
+  .btn-sign-up {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .navbar-links li {
+    font-size: 12px;
+    padding: 5px 5px;
+  }
+}
+
+/* Small Device Adjustments */
+@media (max-width: 425px) {
+  .navbar-social-icons ul li img {
+    width: 25px;
+    height: 25px;
+  }
+  .language-dropdown {
+    font-size: 12px;
+  }
+  .lang-name {
+    font-size: 14px;
+  }
+  .icon-gap {
+    margin-right: 3px !important;
+  }
+
+}
+
+@media (max-width: 576px){
+  .navbar-social-icons{
+    gap: 2px !important;
+
+  }
+   
+}

@@ -1,0 +1,36 @@
+.maindivcanvas2D {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  .divfortextmain {
+    position: absolute;
+    top: -40px;
+    right: -6%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 10px; /* Add space between buttons */
+  }
+  
+  .buttonfortext{
+    padding: 6px 14px;
+    background-color: #e2c5c5; /* Bootstrap blue */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .buttonfortext:hover {
+    background-color: #e68689;
+    ;
+  }
+
+  .drawing-cursor {
+    cursor: url("../../assets/icons/draw_pencil.png") 0 70, pointer !important;
+  }
+  .buttonfortext_active {
+    background-color: #CE0809;
+  }

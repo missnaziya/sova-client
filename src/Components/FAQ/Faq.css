@@ -1,0 +1,95 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+.faq-section{
+    padding: 50px 0px;
+}
+.text-black {
+    color: black !important;
+  }
+  
+.faq-container h1{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+.faq-container p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.faq-section .accordion-button:focus,
+.faq-section .accordion-button:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+
+
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.accordion-item {
+  /* border: 2px solid #00000033 !important; */
+  border-radius: 10px !important;
+  width: 100%; 
+}
+
+.accordion-button:not(.collapsed){
+  background-color: white !important;
+}
+
+
+.accordion-button {
+  background-color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+}
+.faq-question{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-size: 16px;
+  color: #000;
+  width: 100%; 
+}
+
+@media (max-width: 768px) {
+
+.faq-container h1{
+  font-size: 28px;
+}
+
+  .accordion-button {
+    font-size: 1rem;
+  }
+
+  .text-muted {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px){
+.accordion{
+  gap: 0 !important;
+}
+}
+
+
+

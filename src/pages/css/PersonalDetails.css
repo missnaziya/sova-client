@@ -1,0 +1,122 @@
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF8F8;
+}
+
+.details-content {
+    flex-grow: 1;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+.details-content h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.details-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.details-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.inputText,
+.inputEmail,
+select {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #F2F2F2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.details-mobile-input {
+    display: flex;
+    gap: 10px;
+}
+.mobile-select{
+    width: 40%;
+}
+
+.details-mobile-input select {
+    margin-right: 2px;
+}
+
+.details-submit-button {
+    width: 20%;
+    background-color: #CE0809;
+    color: white;
+    font-size: 18px;
+    padding: 6px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    grid-column: span 2;
+    width: max-content;
+}
+
+.details-submit-button:hover {
+    background-color: #a02c2c;
+}
+
+.profile-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+.details-content{
+    padding: 12px;
+    padding-bottom: 20px;
+}
+.inputText, .inputEmail, select{
+    padding: 6px 10px;
+}
+.details-form-group label{
+    font-size: 14px;
+}
+.details-form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.details-container{
+    padding: 0;
+
+}
+.content{
+    margin-top: 20px;
+}
+.details-container{
+    padding: 0 !important;
+    margin-top: 20px;
+}
+.profile-buttons .btn-edit, .profile-buttons .btn-create{
+width: auto !important;
+}
+}

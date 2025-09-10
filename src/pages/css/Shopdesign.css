@@ -1,0 +1,383 @@
+/* ============================================
+   SHOP DESIGN PAGE STYLES
+   ============================================ */
+
+/* ============================================
+   CATEGORY SELECTION MODAL STYLES
+   ============================================ */
+
+/* Full screen overlay for category selection modal */
+.category-modal-overlay {
+  position: fixed;
+  top: 10;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal content container */
+.category-modal-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  min-width: 400px;
+  position: relative; /* for back arrow positioning */
+}
+.category-modal-content button  {
+  margin-bottom: 10px;
+  margin-right: 9px;
+  
+}
+
+/* Modal title styling */
+.category-modal-title {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Modal description text */
+.category-modal-description {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Category dropdown select element */
+.category-dropdown {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #e6aeae;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+/* Dropdown focus state */
+.category-dropdown:focus {
+  border-color: #e6aeae;
+}
+
+/* Start designing button */
+.start-designing-btn {
+  background-color: #CE0809;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button hover state */
+.start-designing-btn:hover {
+  background-color: #CE0809;
+}
+
+/* Button disabled state */
+.start-designing-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Secondary button variant */
+.start-designing-btn.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.start-designing-btn.secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Projects list styling */
+.projects-list {
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.project-item:hover {
+  background-color: #e9ecef;
+  border-color: #CE0809;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-info {
+  flex: 1;
+  text-align: left;
+}
+
+.project-info h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.project-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.load-project-btn {
+  background-color: #CE0809;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.load-project-btn:hover {
+  background-color: #a00;
+}
+
+/* Modal back arrow button */
+.modal-back-arrow {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
+}
+.modal-back-arrow:hover svg {
+  stroke: #a00;
+}
+
+/* ============================================
+   NOTIFICATION MESSAGE STYLES
+   ============================================ */
+
+/* Texture error message display */
+.texture-error-message {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background-color: #ffbb00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+/* Selected model information display */
+.selected-model-info {
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  background-color: #e0f7fa;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 1000;
+  min-width: 200px;
+}
+
+/* ============================================
+   EXISTING SHOPDESIGN STYLES
+   ============================================ */
+
+/* Main drawing application container */
+.drawing-app {
+  display: flex;
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 250px;
+  background: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Sidebar when pinned */
+.sidebar.pinned {
+  width: 250px;
+}
+
+/* Sidebar when unpinned */
+.sidebar.unpinned {
+  width: 60px;
+}
+
+/* Sidebar hover state */
+.sidebar.hovered {
+  width: 250px;
+}
+
+/* Sidebar list styling */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar list items */
+.sidebar li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+/* Sidebar list item hover */
+.sidebar li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Sidebar icons */
+.sidebar img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Canvas area */
+.canvas {
+  flex: 1;
+  background: white;
+  position: relative;
+}
+
+/* Grid toolbar */
+.grid-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Back button */
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* Target button base styles */
+.target-button {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+/* Active button state */
+.target-button.active-button {
+  background-color: #CE0809;
+  color: white;
+  border-color: #CE0809;
+}
+
+/* Toggle center container */
+.toggle-center {
+  display: flex;
+  gap: 10px;
+}
+
+/* Button back styling */
+.button-back {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ============================================
+   CATEGORY DROPDOWN OPTION STYLES
+   ============================================ */
+
+/* Style for dropdown options (works in most browsers) */
+.category-dropdown option {
+  color: #333;
+  background: #fff;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Disabled option style */
+.category-dropdown option:disabled {
+  color: #aaa;
+  background: #f5f5f5;
+}
+
+/* Highlighted/selected option style (browser support may vary) */
+.category-dropdown option:checked,
+.category-dropdown option[selected] {
+  background: #e6aeae;
+  color: #fff;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+  
+  .category-modal-content {
+    min-width: 300px;
+    padding: 30px;
+  }
+  
+  .grid-toolbar {
+    padding: 10px;
+  }
+}
+
+/* Tablet responsive adjustments */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 220px;
+  }
+}
+

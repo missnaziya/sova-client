@@ -1,0 +1,37 @@
+.settings-section h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+.settings-password-main button{
+    background-color: #CE0809;
+    font-size: 17px;
+    padding: 6px 30px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 2px solid #ce0809;
+}
+
+
+
+.settings-password-main button:hover{
+background-color: white;
+color: #CE0809;
+}
+
+.settings-password-main input{
+height: 50px !important;
+font-size: 16px !important;
+padding: 26px 15px !important;
+}
+
+.settings-password-main{
+    background-color: white;
+    padding: 30px 20px;
+    border: 2px solid #0000001A;
+    border-radius: 6px;
+}

@@ -1,0 +1,80 @@
+.my-order-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.order-tabs span {
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.order-tabs span:hover {
+  color: #dc3545;
+
+}
+
+.order-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.order-status {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.order-status.delivered {
+  background-color: #28a745;
+}
+
+.order-status.shipped {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.order-status.cancelled {
+  background-color: #dc3545;
+}
+
+.order-meta {
+  font-size: 14px;
+  color: #777;
+}
+
+.order-title {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.order-price {
+  font-size: 14px;
+  color: #333;
+}
+
+.order-total {
+  font-size: 15px;
+}
+
+.rate-review {
+  font-size: 13px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.order-btn {
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+.order-tab.active {
+  font-weight: bold;
+  color: #dc3545;
+  border-bottom: 2px solid #dc3545;
+}

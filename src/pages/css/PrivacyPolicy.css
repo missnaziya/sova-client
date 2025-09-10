@@ -1,0 +1,141 @@
+.banner-section{
+    background-image: url(../../assets/privacy-policy-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 170px 0px;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+
+
+.banner-section h1{
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+
+.privacy-content-section{
+    padding: 60px 0px;
+}
+
+
+
+.privacy-content-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .privacy-content-section .container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-main-box h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .content-main-box h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+  
+  .content-box {
+    margin-bottom: 30px;
+  }
+  
+  .content-box h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ce0809;
+    margin-bottom: 15px;
+  }
+  
+  .content-box h6 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  
+  .content-box p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  
+  .content-box ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .content-box ul li {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    list-style: disc;
+  }
+  
+  .content-box ul li b {
+    color: #222;
+  }
+  
+  .content-box a {
+    color: #2c97a2;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .content-box a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .privacy-content-section {
+      padding: 40px 15px;
+    }
+  
+    .privacy-content-section .container {
+      padding: 25px;
+    }
+  
+    .content-main-box h2 {
+      font-size: 20px;
+    }
+  
+    .content-main-box h5,
+    .content-box h6,
+    .content-box p,
+    .content-box ul li {
+      font-size: 14px;
+    }
+  
+    .content-box h3 {
+      font-size: 18px;
+    }
+  }
+  
+
+    @media (max-width: 576px){
+.banner-section{
+    padding: 70px 0px;
+}
+    }

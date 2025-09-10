@@ -1,0 +1,85 @@
+.maindivgridcanvas {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .divupper2d_3d {
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    background: #FFEDED;
+    gap: 3px; 
+
+  }
+  .target-button {
+    padding: 5px 16px;
+    background-color: #e2c5c5;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .target-button:hover {
+    background-color: #e68689;
+    ;
+  }
+
+  .active-button {
+    background-color: #CE0809; /* Green for active */
+  }
+  
+  .button-back {
+    background-color: #e6aeae;
+    margin-left: 0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+.grid-toolbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 48px;
+}
+
+.grid-toolbar .button-back {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.toggle-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.button_div_global{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  margin-left: 16px;
+}
+
+.save-project-btn {
+  background-color: #e6aeae;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 5px 16px;
+  transition: background 0.2s;
+}
+.save-project-btn:hover {
+  background-color: #e68689;
+}

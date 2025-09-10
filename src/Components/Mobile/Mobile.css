@@ -1,0 +1,71 @@
+
+.mobile-container{
+    background-image: url(../../assets//mobile-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0px;
+}
+      
+.mobile-sec h1{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+.mobile-sec p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 70px;
+    
+}
+  
+  .phone-image {
+    text-align: center;
+  }
+
+  @media (min-width: 360px) and (max-width: 767px) {
+  .mobile-sec h1{
+    margin-top: 0px;
+    font-size: 28px;
+  }
+  .mobile-sec p{
+    text-align: center;
+    margin-bottom: 5px;
+
+  }
+  .app-links{
+    align-items: center;
+  }
+
+}
+@media (max-width: 576px) {
+
+  .app-links {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+  }
+  
+  .app-links div {
+    display: flex;
+    gap: 10px; 
+  }
+  .img-play{
+    width: 50%;
+  }
+  .img-apple{
+    width: 50%;
+  }
+ 
+  
+
+  
+  
+ 
+
+}
+
+
+   

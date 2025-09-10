@@ -1,0 +1,48 @@
+.shop-container {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF8F8;
+}
+.content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.content h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.design-container {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.design-buttons .btn-edit,
+.design-buttons .btn-create {
+    width: 200px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-edit {
+    background-color: #CE0809;
+    color: white;
+}
+
+.btn-create {
+    background-color: #f0f4ff;
+    color: #CE0809;
+    border: 1px solid #CE0809;
+}

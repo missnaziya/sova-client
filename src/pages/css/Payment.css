@@ -1,0 +1,101 @@
+.payment-container {
+    height: 100%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 52px;
+}
+.payment-icons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.payment-icons img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.6;
+    border: 1px solid #0000001a;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.payment-icons img.selected {
+    opacity: 1;
+    border: 2px solid #0000001a;
+    border-radius: 8px;
+    transform: scale(1.1);
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+label {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.input-field:read-only {
+    background-color: #f1f1f1;
+    color: #555;
+}
+
+.payment-button {
+    width: 20%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #E53935;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.payment-button:hover {
+    background-color: #D32F2F;
+}
